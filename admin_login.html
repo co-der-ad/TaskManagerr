@@ -1,0 +1,46 @@
+<!-- Filename: admin_login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2 class="center-align">Admin Login</h2>
+            <div class="row">
+                <form class="col s12" action="admin_login.php" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="username" type="text" name="username" class="validate" required>
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="password" type="password" name="password" class="validate" required>
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Materialize JavaScript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
